@@ -11,4 +11,4 @@ spec:
     spec:
       containers:
         - name: "$CONTAINER_NAME"
-          image: "$IMAGE_TAG"
+          image: "$DOCKER_IMAGE"
