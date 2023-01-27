@@ -1,5 +1,6 @@
 ## `$$TEMPLATE_NAME`
-> `$TEMPLATE_PATH`
+> ##### Resulting template file:
 ````$TEMPLATE_SYNTAX
 $TEMPLATE_SOURCE
 ````
+> ##### Source: [`$TEMPLATE_PATH`]($TEMPLATE_PATH)
