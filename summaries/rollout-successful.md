@@ -1,8 +1,12 @@
-### Update deployed successfully! ✅
+### ✅ Update deployed successfully!
 > #### Update available at [$ENVIRONMENT_URL]($ENVIRONMENT_URL)
-> #### Environment: `$ENVIRONMENT_NAME`
-> #### Image: `$IMAGE_TAG`
-> #### Deployment: `$DEPLOYMENT`
+> ```yaml
+> Deployment: $DEPLOYMENT
+> Image: $IMAGE_TAG
+> Environment: $ENVIRONMENT_NAME
+> ```
+
+### Rollout output
 ```shell
 $ROLLOUT_RESULT
 ```
