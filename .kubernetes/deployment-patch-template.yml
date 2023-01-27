@@ -1,0 +1,12 @@
+metadata:
+  labels:
+    tags.datadoghq.com/version: "$DATADOG_VERSION"
+spec:
+  template:
+    metadata:
+      labels:
+        tags.datadoghq.com/version: "$DATADOG_VERSION"
+    spec:
+      containers:
+        - name: "$CONTAINER_NAME"
+          image: "$IMAGE_TAG"
