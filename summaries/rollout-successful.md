@@ -1,2 +1,8 @@
 ### Update deployed successfully! ✅
-> The update should be live now!
+> #### Update available at [$ENVIRONMENT_URL]($ENVIRONMENT_URL)
+> #### Environment: `$ENVIRONMENT_NAME`
+> #### Image: `$IMAGE_TAG`
+> #### Deployment: `$DEPLOYMENT`
+```shell
+$ROLLOUT_RESULT
+```
