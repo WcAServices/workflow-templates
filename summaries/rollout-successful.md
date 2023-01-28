@@ -2,7 +2,7 @@
 > #### Update available at [$ENVIRONMENT_URL]($ENVIRONMENT_URL)
 > ```yaml
 > Deployment: $DEPLOYMENT
-> Image: $IMAGE_TAG
+> Image: $DOCKER_IMAGE
 > Environment: $ENVIRONMENT_NAME
 > ```
 
