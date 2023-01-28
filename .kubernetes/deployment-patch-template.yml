@@ -8,13 +8,13 @@ spec:
       labels:
         tags.datadoghq.com/env: "$DATADOG_ENV"
         tags.datadoghq.com/version: "$DATADOG_VERSION"
-    annotations:
-      # language=JSON
-      ad.datadoghq.com/$CONTAINER_NAME.tags: |
-        {
-          "git.commit.sha": "$COMMIT_SHA",
-          "git.repository_url": "$REPOSITORY_URL"
-        }
+      annotations:
+        # language=JSON
+        ad.datadoghq.com/$CONTAINER_NAME.tags: |
+          {
+            "git.commit.sha": "$COMMIT_SHA",
+            "git.repository_url": "$REPOSITORY_URL"
+          }
     spec:
       containers:
         - name: "$CONTAINER_NAME"
