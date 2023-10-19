@@ -4,6 +4,7 @@
 > Deployment: $DEPLOYMENT
 > Image: $DOCKER_IMAGE
 > Environment: $ENVIRONMENT_NAME
+> Datadog version tag: $DATADOG_VERSION
 > ```
 
 ### Rollout output
