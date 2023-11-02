@@ -1,20 +1,20 @@
 metadata:
   labels:
     tags.datadoghq.com/env: "$DATADOG_ENV"
-    tags.datadoghq.com/version: "${DATADOG_VERSION:0:42}"
+    tags.datadoghq.com/version: "$DATADOG_VERSION"
 spec:
   template:
     metadata:
       labels:
         tags.datadoghq.com/env: "$DATADOG_ENV"
-        tags.datadoghq.com/version: "${DATADOG_VERSION:0:42}"
-      annotations:
-        # language=JSON
-        ad.datadoghq.com/$CONTAINER_NAME.tags: |
-          {
-            "git.commit.sha": "$COMMIT_SHA",
-            "git.repository_url": "$REPOSITORY_URL"
-          }
+        tags.datadoghq.com/version: "$DATADOG_VERSION"
+    annotations:
+      # language=JSON
+      ad.datadoghq.com/$CONTAINER_NAME.tags: |
+        {
+          "git.commit.sha": "$COMMIT_SHA",
+          "git.repository_url": "$REPOSITORY_URL"
+        }
     spec:
       containers:
         - name: "$CONTAINER_NAME"
