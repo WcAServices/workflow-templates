@@ -1,13 +1,13 @@
 metadata:
   labels:
     tags.datadoghq.com/env: "$DATADOG_ENV"
-    tags.datadoghq.com/version: "$DATADOG_VERSION"
+    tags.datadoghq.com/version: "${DATADOG_VERSION:0:62}"
 spec:
   template:
     metadata:
       labels:
         tags.datadoghq.com/env: "$DATADOG_ENV"
-        tags.datadoghq.com/version: "$DATADOG_VERSION"
+        tags.datadoghq.com/version: "${DATADOG_VERSION:0:62}"
       annotations:
         # language=JSON
         ad.datadoghq.com/$CONTAINER_NAME.tags: |
